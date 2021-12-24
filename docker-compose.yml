@@ -1,0 +1,9 @@
+version: "3"
+services:
+    datascience-note:
+        build: .
+        volumes: 
+            - ${PWD}/:/home/tk/work
+        ports:
+            - 8888:8888
+        container_name: datascience-note
